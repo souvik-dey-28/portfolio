@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<!-- Created By SOUVIK DEY-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- rich link  -->
+    <meta property="og:title" content="Souvik Dey Portfolio" />
+    <meta property="og:description" content="Links to different platforms" />
+    <meta property="og:image" content="https://see my portfolio /s1.jpg" />
+    <!-- theme color  -->
+    <meta name="theme-color" content="#008069">
+    <!-- done  -->
+    <title>Souvik Dey Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- ===== FAV ICONS ===== -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="s1.jpg" style="height:168 px; width: 168px;" alt="my pic">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* image silder code here */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Caption text */
+        .text {
+            color: #ffffff;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 50px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #008069;
+            font-size: 12px;
+            padding: -12px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
+
+        /* your CSS code here */
+        .cssimage {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* image^ */
+
+        .social {
+            font-size: 20px;
+        }
+
+        .intro {
+            background-color:#008069;
+            color: white;
+        }
+
+        .contactinfo {
+            font-size: 15px;
+            padding-left: 16px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            background-color: #eeeeee;
+        }
+
+        .heading {
+            font-size: 35px;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+
+        .intro {
+            background-color: #008069;
+            color: white;
+            padding-left: 16px;
+        }
+
+        .contactinfo {
+            font-size: 15px;
+            padding-left: 16px;
+        }
+
+        .subheading {
+            font-size: 20px;
+            font-weight: bolder;
+            color: #008069;
+            text-transform: uppercase;
+        }
+
+        .subheading {
+            font-size: 20px;
+            font-weight: bolder;
+            color: #008069;
+        }
+
+        .intro {
+            background-color: #008069;
+            color: white;
+            padding-left: 16px;
+            padding-bottom: 8px;
+            margin-bottom: 4px;
+        }
+
+        .contactinfo {
+            font-size: 15px;
+            padding-left: 16px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
+
+        .icon {
+            color: #008069;
+        }
+
+        .skills ul li {
+            display: flex;
+            margin-bottom: 10px;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: -15px;
+        }
+
+        img {
+            border-radius: 25%;
+        }
+
+        img {
+            border: 10px solid #008069;
+        }
+
+        img {
+            float: right;
+        }
+
+        .icon {
+            float: left;
+            color: #008069;
+        }
+
+        .intro {
+            background-color: #008069;
+        }
+
+        body {
+            font-family: 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif
+        }
+
+        .skills ul li .skill_prog {
+            width: 50%;
+            height: 5px;
+            position: relative;
+        }
+
+        .skills ul li .skill_prog span {
+            position: absolute;
+            height: 100%;
+            background: #008069;
+            padding-right: 50px;
+        }
+
+        .skill_name {
+            width: 4px;
+        }
+
+        .skill_per {
+            margin-right: 15px;
+        }
+
+        .prof {
+            font-size: 20px;
+        }
+
+        .contactinfo {
+            font-size: 15px
+        }
+
+        .subheading {
+            font-size: 20px;
+            ;
+        }
+
+        .heading {
+            font-size: 35px;
+            font-weight: bolder;
+        }
+
+        .prof {
+            font-size: 20px;
+            font-weight: lighter;
+        }
+
+        .subheading {
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        .date {
+            font-size: 16px;
+            color: #008069;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo">
+                <a href="#">SOUVIK DEY</a>
+            </div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+                <li><a href="#SKILLS" class="nav-link">SKILLS</a></li>
+                <li><a href="#EXPERIENCE" class="nav-link">EXPERIENCE</a></li>
+                <li><a href="#IMAGE SLIDER" class="nav-link">IMAGE SLIDER</a></li>
+                <li><a href="#SOCIAL" class="nav-link">SOCIAL</a> </li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="banner"></div>
+    <div class="about">
+        <div class="content">
+            <div class="title">MY PORTFOLIO </div>
+            <!--Intro-->
+            <div id="about"></div>
+            <div class="intro">
+                <img src="s1.jpg" style="height: 38% ; width:38%;"></img>
+                <div class="heading">Souvik Dey</div>
+                <div class="prof">Software Engineer Student</div>
+                <p class="summary">Hello everybody! <br>
+                <ol>
+                    <li> My name is Souvik Dey <br> and I'm just starting second year <br> of my Software Engineering
+                        studies <br> at Bengal College
+                        of Engineering and Technology in india. <br>
+                    </li>
+                    <li>
+                        Now I focused on backend web development and react.js , <br> but I can write
+                        c++ little bit. <br> Check my github profile page .
+                    </li>
+                </ol>
+                </p>
+
+            </div>
+
+            <!--Contact Information-->
+            <div class="contactinfo">
+                <div class="icon">
+                    <div class="fas fa-map-signs"></div>
+                </div>
+                <div class="data">
+                    &nbsp; New Egara , Raniganj-713323
+                </div>
+                <br>
+                <div class="icon">
+                    <div class="fas fa-mobile-alt"></div>
+                </div>
+                <div class="data">
+                    &nbsp; &nbsp; 7908535841
+                </div>
+                <br>
+                <div class="icon">
+                    <div class="fas fa-envelope"></div>
+                </div>
+                <div class="data">
+                    &nbsp; deysouvik123456@gmail.com
+                </div>
+            </div>
+            <!--Skills Section-->
+            <div class="subheading" id="SKILLS">Skills</div>
+            <div class="skills">
+                <ul>
+                    <li>
+                        <div class="skill_name">
+                            c
+                        </div>
+                        <div class="skill_prog">
+                            <span style="width: 95%;"></span>
+                        </div>
+                        <div class="skill_per">95%</div>
+                    </li>
+                    <li>
+                        <div class="skill_name">
+                            c++
+                        </div>
+                        <div class="skill_prog">
+                            <span style="width: 10%;"></span>
+                        </div>
+                        <div class="skill_per">10%</div>
+                    </li>
+                    <li>
+                        <div class="skill_name">
+                            python
+                        </div>
+                        <div class="skill_prog">
+                            <span style="width: 60%;"></span>
+                        </div>
+                        <div class="skill_per">60%</div>
+                    </li>
+                    <li>
+                        <div class="skill_name">
+                            HTML
+                        </div>
+                        <div class="skill_prog">
+                            <span style="width: 90%;"></span>
+                        </div>
+                        <div class="skill_per">90%</div>
+                    </li>
+                    <li>
+                        <div class="skill_name">
+                            CSS
+                        </div>
+                        <div class="skill_prog">
+                            <span style="width: 80%;"></span>
+                        </div>
+                        <div class="skill_per">80%</div>
+                    </li>
+                    <li>
+                        <div class="skill_name">
+                            JS
+                        </div>
+                        <div class="skill_prog">
+                            <span style="width: 70%;"></span>
+                        </div>
+                        <div class="skill_per">70%</div>
+                    </li>
+                </ul>
+            </div>
+            <!--Experience/Education-->
+            <div class="subheading" id="EXPERIENCE">Experience</div>
+            <div class="explist">
+                <ul>
+                    <li>
+                        <div class="date">2021-2025</div>
+                        <div class="jobinfo">
+                            <div class="jobtitle"><b><i> Software Engineer - Student</i></b></div>
+                            <div class="jobdesc"><b>Learning :</b> c , c++ , python <br> <b>Projects :</b> Sum , Average
+                                ,
+                                Function , Array , Loop , Prime or Not , Etc...</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="date">2021-2022</div>
+                        <div class="jobinfo">
+                            <div class="jobtitle"><b><i> Frontend Web Development - Student </i></b></div>
+                            <div class="jobdesc"><b>Learning :</b> Html 5 , CSS 3 , javascript . <br> <b>Projects :</b>
+                                Clock
+                                (web digital time clock , stopwatch , timmer), Portfolio Website , CV Website , Etc...
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- image slider -->
+            <div class="subheading" id="IMAGE SLIDER">IMAGE Slider</div>
+
+            <div class="cssimage">
+
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 12</div>
+                        <img src="s1.jpg" style="width:100%">
+                        <div class="text">2021 DURGAPUJA MY PICTURE</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 12</div>
+                        <img src="s2.jpg" style="width:100%">
+                        <div class="text">2022 DURGAPUJA MY PICTURE</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 12</div>
+                        <img src="s3.jpg" style="width:100%">
+                        <div class="text">2021 DURGAPUJA MY PICTURE</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 12</div>
+                        <img src="s4.jpg" style="width:100%">
+                        <div class="text">2019 DURGAPUJA <br> MY PICTURE</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">5 / 12</div>
+                        <img src="s5.jpg" style="width:100%">
+                        <div class="text">ASANSOL PARK MY PICTURE</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">6 / 12</div>
+                        <img src="s6.jpg" style="width:100%">
+                        <div class="text">2020 DURGAPUJA MY PICTURE</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">7 / 12</div>
+                        <img src="s7.jpg" style="width:100%">
+                        <div class="text">2020 DURGAPUJA MY PICTURE</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">8 / 12</div>
+                        <img src="s8.jpg" style="width:100%">
+                        <div class="text">MY CHILDHOOD PICTURE</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">9 / 12</div>
+                        <img src="s9.jpg" style="width:100%">
+                        <div class="text">2020 BIJOY SIR TUTION LAST DAY PICTURE</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">10 / 12</div>
+                        <img src="s10.jpg" style="width:100%">
+                        <div class="text">FRIEND'S(ARNAB,SOUVIK,JOYDEV)</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">11 / 12</div>
+                        <img src="s11.jpg" style="width:100%">
+                        <div class="text">2021 KALI-PUJA MY PICTURE</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">12 / 12</div>
+                        <img src="s12.jpg" style="width:100%">
+                        <div class="text">DURGAPUR RAIL-STATION WITH ABIR GHOSH</div>
+                    </div>
+
+                    <div style="text-align:center">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!--Social-->
+            <div class="subheading" id="SOCIAL">Social</div>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100037608103246&sk=grid" target="_blank">
+                    <div class="icon">
+                        <span style="padding-left:10px;"></span>
+                        <div class="fab fa-facebook-square">Facebook</div>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/souvik_dey_28/" target="_blank">
+                    <div class="icon">
+                        <span style="padding-left:10px;"></span>
+                        <div class="fab fa-instagram">Instagram</div>
+                    </div>
+                </a>
+                <a href="https://github.com/souvik-dey-28" target="_blank">
+                    <div class="icon">
+                        <span style="padding-left:10px;"></span>
+                        <div class="fab fa-github">Github</div>
+                    </div>
+                </a>
+                <a href="https://wa.me/+917908535841?text=Hi%20%2C%20Souvik%20Dey.%0AHow%20are%20you%3F"
+                    target="_blank">
+                    <div class="icon">
+                        <span style="padding-left:10px;"></span>
+                        <div class="fab fa-whatsapp">Whatsapp</div>
+                    </div>
+                </a>
+                <a href="https://t.me/souvik_dey_28" target="_blank">
+                    <div class="icon">
+                        <span style="padding-left:10px;"></span>
+                        <div class="fab fa-telegram">Telegram</div>
+                    </div>
+                </a>
+                <a href="mailto:deysouvik123456@gmail.com" target="_blank">
+                    <div class="icon">
+                        <span style="padding-left:10px;"></span>
+                        <div class="fa fa-envelope">Email</div>
+                    </div>
+                </a>
+                <a href="tel:+917908535841" target="_blank">
+                    <div class="icon">
+                        <span style="padding-left:10px;"></span>
+                        <div class="fas fa-phone-square-alt"> Call Me </div>
+                    </div>
+                </a>
+                <a href="sms:+917908535841" target="_blank">
+                    <div class="icon">
+                        <span style="padding-left:10px;"></span>
+                        <div class="fas fa-sms"> Msg Me </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = () => {
+            navbar.classList.add("show");
+            menuBtn.classList.add("hide");
+            body.classList.add("disabled");
+        }
+        cancelBtn.onclick = () => {
+            body.classList.remove("disabled");
+            navbar.classList.remove("show");
+            menuBtn.classList.remove("hide");
+        }
+        window.onscroll = () => {
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+    </script>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+</body>
+
+</html>
